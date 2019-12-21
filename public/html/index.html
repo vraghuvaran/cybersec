@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="/img/favicon.png">
     <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="/css/animate.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
       
     <style>
@@ -22,7 +23,61 @@
 text-shadow: #FFFCA8 2px 2px 0px, #9C9C9C 4px 4px 0px;
         
       }
-        
+        .slide_style_left {
+    text-align: left !important;
+}
+
+.slide_style_right {
+    text-align: right !important;
+}
+
+.slide_style_center {
+    text-align: center !important;
+}
+       .slide-text {
+    left: 0;
+    top: 25%;
+    right: 0;
+    margin: auto;
+    padding: 10px;
+    position: absolute;
+    text-align: left;
+    padding: 10px 85px;
+}
+
+.slide-text>h1 {
+
+    padding: 0;
+    color: #ffffff;
+    font-size: 70px;
+    font-style: normal;
+    line-height: 84px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    display: inline-block;
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+.slide-text>p {
+    padding: 0;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    -webkit-animation-delay: 1.1s;
+    animation-delay: 1.1s;
+    text-align: inherit !important;
+}
+ .promo-content{    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+}
+
         
       </style>
     
@@ -54,7 +109,7 @@ text-shadow: #FFFCA8 2px 2px 0px, #9C9C9C 4px 4px 0px;
               </nav>
       
       
-     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"  >
+     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -62,13 +117,21 @@ text-shadow: #FFFCA8 2px 2px 0px, #9C9C9C 4px 4px 0px;
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="/img/chess.jpeg" class="d-block w-100"  style="height:600px" alt="...">
+      <img src="/img/cyber4.jpeg" class="d-block w-100"  style="height:600px" alt="...">
+        <div class="slide-text"> 
+                    <h1 data-animation="animated flipInX">Cyber Security</h1>
+                    <p data-animation="animated fadeInRight">Defender offers end-to-end Cyber Security services <br> with flexible business models.</p>
+                </div>
     </div>
     <div class="carousel-item">
       <img src="/img/hack.jpg" class="d-block w-100"  style="height:600px" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="/img/code1.jpg" class="d-block w-100"  style="height:600px" alt="...">
+      <img src="/img/cyber5.jpg" class="d-block w-100"  style="height:600px" alt="...">
+        <div class="promo-content">
+         <h2 class="text-center" style="color: #ffffff; opacity: 0.9">
+                                The Symantec Enterprise Security business is now part of Broadcom</h2>
+        </div>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
